@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+
+		#gif{
+			transition:5s;
+		}
+	</style>
+
+
+</head>
+
+
+<script type="text/javascript">
+	function brilho()
+	{
+      	let imagem = document.querySelector('#foto');
+      	imagem.style.opacity = '0.9';
+	}
+	function tirarBrilho()
+	{
+		let imagem = document.querySelector('#foto');
+		imagem.style.opacity = '1';
+	}
+function mover(){
+	let imagem = document.querySelector('#gif');
+	imagem.style.marginLeft= '500px';
+}
+
+
+</script>
+<body>
+	<img id="foto" onmouseover="brilho()" onmouseleave="tirarBrilho()" src="https://eternalpoose.files.wordpress.com/2011/05/wind.jpg">
+	<img id="gif" src="http://rs301.pbsrc.com/albums/nn64/lucsonic/Sonic/Knuckles/knucklesrunning3-sonicxpress.gif~c200">
+<buttom onclick="mover()">Mover</buttom>
+
+
+	<button onclick="window.print()">
+		Imprimir
+</button>
+
+</body>
+</html>
